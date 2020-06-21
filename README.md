@@ -1,5 +1,7 @@
 # Command-Line Connect Four
+
 A command-line implementation of Connect Four written in Ruby
+
 ## Gameplay
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Connect_Four):
@@ -13,3 +15,25 @@ This command line app has players enter a column number between 1 and 7 to indic
 The game ends when one player gets four in a row, at which point the players get the option to play again. The losing player of one round will go first in the next round:
 
 ![A completed game in which Yellow won](finished_game.png)
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'connect_four'
+```
+
+And then execute:
+
+    $ bundle install
+
+Or install it yourself as:
+
+    $ gem install connect_four
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. 
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
