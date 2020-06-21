@@ -1,4 +1,4 @@
-require "connect_four"
+require "command_four"
 
 describe Board do
 

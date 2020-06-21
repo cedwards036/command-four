@@ -1,5 +1,5 @@
 require "colorize"
-require "connect_four"
+require "command_four"
 
 describe BoardRenderer do
   describe "#render_for_printing" do 

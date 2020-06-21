@@ -1,8 +1,8 @@
 require 'colorize'
 
-require 'connect_four/board'
-require 'connect_four/board_renderer'
-require 'connect_four/version'
+require 'command_four/board'
+require 'command_four/board_renderer'
+require 'command_four/version'
 
 class CLI
   def start
@@ -18,7 +18,7 @@ class CLI
 
   def print_welcome_banner
     puts "========================="
-    puts " Welcome to Connect Four"
+    puts " Welcome to Command Four"
     puts "========================="
   end
 
