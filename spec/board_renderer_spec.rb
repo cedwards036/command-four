@@ -1,5 +1,5 @@
-require 'colorize'
-require "./lib/board_renderer"
+require "colorize"
+require "connect_four"
 
 describe BoardRenderer do
   describe "#render_for_printing" do 

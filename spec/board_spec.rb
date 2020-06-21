@@ -1,4 +1,4 @@
-require "./lib/board"
+require "connect_four"
 
 describe Board do
 
