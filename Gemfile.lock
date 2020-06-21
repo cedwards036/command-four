@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    connect_four (1.0.0)
+    command_four (1.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -28,7 +28,7 @@ PLATFORMS
 
 DEPENDENCIES
   colorize (>= 0.8.1)
-  connect_four!
+  command_four!
   rake (~> 12.0)
   rspec (~> 3.0)
 
