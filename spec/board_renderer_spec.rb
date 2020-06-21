@@ -7,11 +7,11 @@ describe BoardRenderer do
       renderer = BoardRenderer.new(Board.new(3,2))
       blue_divider = "|".blue
       expect(renderer.render_for_printing).to eq(
-        "+---+---+---+".blue + "\n" + 
-        blue_divider + "   " + blue_divider + "   " + blue_divider + "   " + blue_divider + "\n" +
-        "+---+---+---+".blue + "\n" + 
-        blue_divider + "   " + blue_divider + "   " + blue_divider + "   " + blue_divider + "\n" +
-        "+---+---+---+".blue
+        "+----+----+----+".blue + "\n" + 
+        blue_divider + "    " + blue_divider + "    " + blue_divider + "    " + blue_divider + "\n" +
+        "+----+----+----+".blue + "\n" + 
+        blue_divider + "    " + blue_divider + "    " + blue_divider + "    " + blue_divider + "\n" +
+        "+----+----+----+".blue
       )
     end
 
@@ -25,11 +25,11 @@ describe BoardRenderer do
       blue_divider = "|".blue
       renderer = BoardRenderer.new(board)
       expect(renderer.render_for_printing).to eq(
-        "+---+---+".blue + "\n" + 
-        blue_divider + "   " + blue_divider + " #{yellow} " + blue_divider + "\n" + 
-        "+---+---+".blue + "\n" + 
-        + blue_divider + " #{yellow} " + blue_divider + " #{red} " + blue_divider + "\n" +
-        "+---+---+".blue
+        "+----+----+".blue + "\n" + 
+        blue_divider + "    " + blue_divider + " #{yellow}  " + blue_divider + "\n" + 
+        "+----+----+".blue + "\n" + 
+        + blue_divider + " #{yellow}  " + blue_divider + " #{red}  " + blue_divider + "\n" +
+        "+----+----+".blue
       )
     end
 
@@ -43,11 +43,11 @@ describe BoardRenderer do
       blue_divider = "|".blue
       renderer = BoardRenderer.new(board)
       expect(renderer.render_for_printing).to eq(
-        "+---+---+".blue + "\n" + 
-        blue_divider + "[#{red}]" + blue_divider + "   " + blue_divider + "\n" + 
-        "+---+---+".blue + "\n" + 
-        + blue_divider + " #{yellow} " + blue_divider + "[#{red}]" + blue_divider + "\n" +
-        "+---+---+".blue
+        "+----+----+".blue + "\n" + 
+        blue_divider + "[#{red} ]" + blue_divider + "    " + blue_divider + "\n" + 
+        "+----+----+".blue + "\n" + 
+        + blue_divider + " #{yellow}  " + blue_divider + "[#{red} ]" + blue_divider + "\n" +
+        "+----+----+".blue
       )
     end
   end

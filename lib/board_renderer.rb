@@ -6,11 +6,11 @@ class BoardRenderer
   end
 
   def render_for_printing
-    row_divider = ("+" + ("---+" * @board.width)).blue 
+    row_divider = ("+" + ("----+" * @board.width)).blue 
     col_divider = "|".blue
     result = "" << (row_divider + "\n")
     string_symbol_board = @board.to_a.map do |row|
-      row.map {|cell_color| TextCell.new(" ", "#{color_to_s(cell_color)}", " ")}
+      row.map {|cell_color| TextCell.new(" ", "#{color_to_s(cell_color)}", "  ")}
     end
     if @board.game_over?
       add_winning_cell_highlights(string_symbol_board)
@@ -41,7 +41,7 @@ class BoardRenderer
     @board.winning_cells.each do |coord|
       text_cell = string_symbol_board[coord[0]][coord[1]]
       text_cell.left_bookmark = "["
-      text_cell.right_bookmark = "]"
+      text_cell.right_bookmark = " ]"
     end
   end
 
