@@ -16,6 +16,8 @@ The game ends when one player gets four in a row, at which point the players get
 
 ![A completed game in which Yellow won](finished_game.png)
 
+**Warning**: For best effect, use a terminal font that supports [large black circle, U+2B24](https://www.compart.com/en/unicode/U+2B24). Otherwise, the player pieces will render as your font's "unknown character" symbol.
+
 ## Installation
 
 Add this line to your application's Gemfile:
