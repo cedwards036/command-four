@@ -1,4 +1,5 @@
 class Board
+  attr_reader :width, :height
 
   def initialize(width = 7, height = 6, connect_n = 4)
     @width = width
